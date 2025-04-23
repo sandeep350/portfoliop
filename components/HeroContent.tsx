@@ -17,7 +17,7 @@ const HeroContent = () => {
         {/* Welcome Box */}
         <motion.div 
           variants={slideInFromTop}
-          className='Welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-[0.9]'
+          className='Welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-[0.9] flex items-center'
         > 
           <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5' />
           <h1 className='Welcome-text text-[13px]'>Fullstack Developer Portfolio</h1>
@@ -26,23 +26,23 @@ const HeroContent = () => {
         {/* Headline */}
         <motion.div 
           variants={slideInFromLeft(0.5)}
-          className='flex flex-col gap-2 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'
+          className="text-lg my-5 max-w-[600px]"
+          style={{ color: "#06b6d4" }} 
         >
-          <div>Providing</div>
-          <div>
-          <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-white'>
-            the best
-          </span>
-
-          </div>
-          <div>project experience</div>
+          <h2>Providing</h2>
+          <h2>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-700"
+              style={{ color: "#7c3aed" }}>
+              the best
+            </span>
+          </h2>
+          <h2>project experience</h2>
         </motion.div>
-
 
         {/* Paragraph */}
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className='text-lg my-5 max-w-[600px]'
+          className="text-lg my-5 max-w-[600px] text-cyan-500"
           style={{ color: "#ffffff" }}
         >
           I&apos;m a fullstack developer with a passion for creating dynamic and responsive web applications. I have experience in both front-end and back-end development, and I am always eager to learn new technologies and improve my skills.
@@ -65,7 +65,7 @@ const HeroContent = () => {
       >
         <Image
           src="/mainIconsdark.svg"
-          alt="work icons"
+          alt="Illustration of coding and design icons"
           height={650}
           width={650}
         />
